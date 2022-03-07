@@ -1,0 +1,86 @@
+package com.route.myapplication.hms.ui.DoctorUserFragments
+
+import android.os.Bundle
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
+import com.route.myapplication.hms.R
+import com.route.myapplication.hms.ui.ui.DoctorInpatientAdapter
+import com.route.myapplication.hms.ui.ui.InpatientDetails
+import com.route.myapplication.hms.ui.ui.PatientAdapter
+import com.route.myapplication.hms.ui.ui.PatientDetails
+
+
+class DoctorUserOutpatientFragment : Fragment() {
+    lateinit var recyclerView: RecyclerView
+    lateinit var adapter : PatientAdapter
+    lateinit var items: MutableList<PatientDetails>
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_doctor_user_outpatient, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        recyclerView =requireView().findViewById(R.id.Doctoroutpatient_recyclerView)
+        items = AddingItems()
+        adapter = PatientAdapter(items)
+        recyclerView.adapter = adapter
+
+        adapter.onAppointmentImgClickListener = object : PatientAdapter.OnImageClickListener{
+            override fun onImageClick(pos: Int, item: PatientDetails) {
+                pushFragment(MakeAppointmentFragment())
+            }
+        }
+
+        adapter.onLabImgClickListener = object : PatientAdapter.OnImageClickListener{
+            override fun onImageClick(pos: Int, item: PatientDetails) {
+                pushFragment(MakeLab_ScanFragment())
+            }
+        }
+
+        adapter.onReportImgClickListener = object : PatientAdapter.OnImageClickListener{
+            override fun onImageClick(pos: Int, item: PatientDetails) {
+                pushFragment(PatientReportFragment())
+            }
+        }
+
+        adapter.onPrescriptionImgClickListener = object : PatientAdapter.OnImageClickListener{
+            override fun onImageClick(pos: Int, item: PatientDetails) {
+                pushFragment(PrescriptionFragment())
+            }
+        }
+    }
+
+    private fun AddingItems() : MutableList<PatientDetails>{
+        val items: MutableList<PatientDetails> = arrayListOf()
+        for (i in 0..999) {
+            items.add(
+                PatientDetails("Ahmed Ali ",
+                "ID: 001122334455",
+                "Gender: Male",
+                "Phone: 01091983199",
+                R.drawable.ic_calender,
+                R.drawable.ic_test,
+                R.drawable.ic_file,
+                R.drawable.ic_medicien))
+        }
+        return items
+    }
+
+    private fun pushFragment(fragment: Fragment) {
+        parentFragmentManager.beginTransaction()
+            .replace(R.id.fragment_container, fragment)
+            .addToBackStack("back")
+            .commit()
+    }
+
+
+}

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/patient_name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Patient Name"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:padding="15dp"
+        android:background="@drawable/patient_name_design"/>
+    <View
+        android:id="@+id/HLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blue"
+        app:layout_constraintTop_toBottomOf="@id/patient_name_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <LinearLayout
+        android:id="@+id/linear_outpatient_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/HLine"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/patient_view_design"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/patient_detailsID_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ID:"
+            android:textSize="20sp"
+            android:padding="17dp"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:id="@+id/patient_detailsGender_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gender:"
+            android:textSize="20sp"
+            android:padding="7dp"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/patient_detailsPhone_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PhoneNumber:"
+            android:textSize="20sp"
+            android:padding="7dp"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/patient_options"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:gravity="center"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintTop_toBottomOf="@id/linear_outpatient_details"
+        android:background="@drawable/patient_options_design">
+
+        <ImageView
+            android:id="@+id/vitalSignsImg"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_vitalsigns" />
+
+        <ImageView
+            android:id="@+id/test"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_test"/>
+        <ImageView
+            android:id="@+id/report"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_file"/>
+        <ImageView
+            android:id="@+id/medication"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_medicien"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:id="@+id/addNewPrescribtionLinearLayout">
+
+
+        <EditText
+            android:id="@+id/addedmedicineNameEditText"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/inputtext_reg_design"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            />
+        <EditText
+            android:id="@+id/addedmedicineSterngthEditText"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/inputtext_reg_design"
+            android:padding="5dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black"
+            />
+        <EditText
+            android:id="@+id/addedinstructionsEditText"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/inputtext_reg_design"
+            android:padding="5dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black"
+            />
+
+        <Spinner
+            android:id="@+id/addedmedicinetypeEditText"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/inputtext_reg_design"
+            android:entries="@array/MedicineTypeOptions"
+            android:padding="5dp"
+            android:popupBackground="@color/white"
+            />
+
+        <EditText
+            android:id="@+id/addeddurationEditText"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/inputtext_reg_design"
+            android:padding="5dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black"
+            />
+
+        <Spinner
+            android:id="@+id/addeddurationSpinner"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/inputtext_reg_design"
+            android:entries="@array/DurationOptions"
+            android:padding="5dp"
+            android:popupBackground="@color/white"
+            />
+
+        <EditText
+            android:id="@+id/addedrepetitionEditText"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/inputtext_reg_design"
+            android:padding="5dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black"
+            />
+
+        <Spinner
+            android:id="@+id/addedrepetitionSpinner"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/inputtext_reg_design"
+            android:entries="@array/DurationOptions"
+            android:padding="5dp"
+            android:popupBackground="@color/white"
+
+            />
+        <EditText
+            android:id="@+id/addeddoseEditText"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/inputtext_reg_design"
+            android:padding="5dp"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/black"
+            />
+        <Button
+            android:id="@+id/addedEditPrescribtionBtn"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+            app:icon="@drawable/ic_edit"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/blue"
+            android:layout_marginStart="30dp"/>
+
+        <Button
+            android:id="@+id/addedSavePrescribtionBtn"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+            app:icon="@drawable/ic_save"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:backgroundTint="@color/blue"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <Button
+            android:id="@+id/addedRemovePrescribtionBtn"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+            app:icon="@drawable/ic_remove"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:backgroundTint="@color/red"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            />
+
+</LinearLayout>

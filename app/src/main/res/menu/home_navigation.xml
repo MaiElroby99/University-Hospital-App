@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/navigation_home"
+        android:title="Home" />
+
+    <item android:id="@+id/navigation_doctors"
+        android:title="Doctors"/>
+
+    <item android:id="@+id/navigation_clinic"
+        android:title="Clinic"/>
+
+<!--    <item android:id="@+id/navigation_services"-->
+<!--        android:title="Services"/>-->
+
+    <item android:id="@+id/navigation_appointment"
+        android:title="Appointment"/>
+
+    <item android:id="@+id/navigation_login"
+        android:title="Login"/>
+
+</menu>

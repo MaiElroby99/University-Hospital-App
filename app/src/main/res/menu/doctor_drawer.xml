@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Doctordashboard"
+            android:title="dashboard"
+            android:icon="@drawable/ic_dashboard"/>
+        <item
+            android:id="@+id/nav_DoctorAppointment"
+            android:title="appointments"
+            android:icon="@drawable/ic_doctor"/>
+
+        <item
+            android:id="@+id/nav_Outpatient"
+            android:title="Out patient"
+            android:icon="@drawable/ic_doctor"/>
+
+        <item
+            android:id="@+id/nav_Inpatient"
+            android:title="In patient"
+            android:icon="@drawable/ic_doctor"/>
+
+
+        <item
+            android:id="@+id/nav_Doctorlogout"
+            android:title="logout"
+            android:icon="@drawable/ic_logout"/>
+    </group>
+</menu>

@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.DoctorUserFragments.MakeLab_ScanFragment"
+    android:scrollbars="vertical">
+
+    <HorizontalScrollView
+        android:id="@+id/Hview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/patientID_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Patient's ID "
+                android:textSize="20dp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/patientID_input"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/gray"
+                android:padding="5dp"
+                app:layout_constraintStart_toStartOf="@id/patientID_tv"
+                app:layout_constraintTop_toBottomOf="@id/patientID_tv" />
+
+            <TextView
+                android:id="@+id/doctorName_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doctor's Name "
+                android:textSize="20dp"
+                android:layout_marginStart="150dp"
+                app:layout_constraintStart_toEndOf="@id/patientID_tv"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/doctorName_input"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/gray"
+                android:padding="5dp"
+                app:layout_constraintStart_toStartOf="@id/doctorName_tv"
+                app:layout_constraintTop_toBottomOf="@id/doctorName_tv" />
+
+            <TextView
+                android:id="@+id/department_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Department"
+                android:textSize="20dp"
+                android:layout_marginStart="150dp"
+                app:layout_constraintStart_toEndOf="@id/doctorName_tv"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/department_input"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/gray"
+                android:padding="5dp"
+                app:layout_constraintStart_toStartOf="@id/department_tv"
+                app:layout_constraintTop_toBottomOf="@id/department_tv" />
+
+            <TextView
+                android:id="@+id/lab_test_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose lab test"
+                android:textSize="25dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="50dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/patientID_input" />
+
+            <View
+                android:id="@+id/HLine"
+                android:layout_width="0dp"
+                android:layout_height="3dp"
+                android:background="@color/blue"
+                app:layout_constraintTop_toBottomOf="@id/lab_test_title"
+                app:layout_constraintStart_toStartOf="@id/lab_test_title"
+                app:layout_constraintEnd_toEndOf="@id/lab_test_title"
+                />
+
+            <LinearLayout
+                android:id="@+id/lab_linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="@id/HLine"
+                app:layout_constraintTop_toBottomOf="@id/HLine">
+
+                <CheckBox
+                    android:id="@+id/test1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Adrenal gland hormone analysis" />
+
+                <CheckBox
+                    android:id="@+id/test2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AFP Analysis = Alpha Feto-protein" />
+
+                <CheckBox
+                    android:id="@+id/test3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Analysis of salts and minerals" />
+
+                <CheckBox
+                    android:id="@+id/test4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ASO analysis" />
+
+                <CheckBox
+                    android:id="@+id/test5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bleeding time (BT) measurement" />
+
+                <CheckBox
+                    android:id="@+id/test6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cardiac Functions" />
+
+
+                <CheckBox
+                    android:id="@+id/test7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CBC complete blood picture" />
+
+                <CheckBox
+                    android:id="@+id/test8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cholesterol analysis" />
+
+                <CheckBox
+                    android:id="@+id/test9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Coombs Test" />
+
+                <CheckBox
+                    android:id="@+id/test10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CRP = C - Reactive protein" />
+
+                <CheckBox
+                    android:id="@+id/test11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Helicobacter pylori" />
+
+                <CheckBox
+                    android:id="@+id/test12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hepatitis C virus" />
+
+
+                <CheckBox
+                    android:id="@+id/test13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HIV analysis" />
+
+                <CheckBox
+                    android:id="@+id/test14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AInsulin hormone analysis" />
+
+                <CheckBox
+                    android:id="@+id/test15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kidney Functions Analysis" />
+
+                <CheckBox
+                    android:id="@+id/test16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lipids analysis" />
+
+                <CheckBox
+                    android:id="@+id/test17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Liver functions analysis" />
+
+                <CheckBox
+                    android:id="@+id/test18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Parathyroid gland analysis" />
+
+
+                <CheckBox
+                    android:id="@+id/test19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PCR (Polymerase chain reaction) analysis" />
+
+                <CheckBox
+                    android:id="@+id/test20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pituitary gland analysis" />
+
+                <CheckBox
+                    android:id="@+id/test21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Preparation of sex hormones" />
+
+                <CheckBox
+                    android:id="@+id/test22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Refer blood type and Rh factor" />
+
+                <CheckBox
+                    android:id="@+id/test23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Salmonella (Widal) test" />
+
+                <CheckBox
+                    android:id="@+id/test24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sedimentation rate (ESR) analysis" />
+
+                <CheckBox
+                    android:id="@+id/test25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Semen analysis" />
+
+                <CheckBox
+                    android:id="@+id/test26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sputum analysis" />
+
+                <CheckBox
+                    android:id="@+id/test27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stool analysis" />
+
+                <CheckBox
+                    android:id="@+id/test28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sugar analysis" />
+
+                <CheckBox
+                    android:id="@+id/test29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thyroid hormone analysis" />
+
+                <CheckBox
+                    android:id="@+id/test30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stransmit anemia" />
+
+                <CheckBox
+                    android:id="@+id/test31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Triglycerides analysis" />
+
+                <CheckBox
+                    android:id="@+id/test32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tumor marker analysis" />
+
+                <CheckBox
+                    android:id="@+id/test33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Urine analysis " />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/scan_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose ray"
+                android:textSize="25dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="50dp"
+                app:layout_constraintStart_toEndOf="@id/lab_test_title"
+                app:layout_constraintTop_toBottomOf="@id/patientID_input" />
+
+            <View
+                android:id="@+id/HLine2"
+                android:layout_width="0dp"
+                android:layout_height="3dp"
+                android:background="@color/blue"
+                app:layout_constraintTop_toBottomOf="@id/scan_title"
+                app:layout_constraintStart_toStartOf="@id/scan_title"
+                app:layout_constraintEnd_toEndOf="@id/scan_title"
+                />
+
+            <LinearLayout
+                android:id="@+id/scan_linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintStart_toEndOf="@id/lab_linearLayout"
+                app:layout_constraintTop_toBottomOf="@id/HLine2">
+
+                <CheckBox
+                    android:id="@+id/scan1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="X-ray" />
+
+                <CheckBox
+                    android:id="@+id/scan2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="X-ray with dye" />
+                <CheckBox
+                    android:id="@+id/scan3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="rays of dye on the uterus and tubes" />
+                <CheckBox
+                    android:id="@+id/scan4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="XMammography to detect breast tumors" />
+                <CheckBox
+                    android:id="@+id/scan5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Computer tomography, CT Scan" />
+                <CheckBox
+                    android:id="@+id/scan7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="magnetic resonance imaging, MRI" />
+
+
+                <CheckBox
+                    android:id="@+id/scan8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="television rays or ultrasound (sonar)" />
+
+                <CheckBox
+                    android:id="@+id/scan9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Three-dimensional and four-dimensional sonar" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/submitbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/submitbtn"
+                android:backgroundTint="@color/blue"
+                android:padding="5dp"
+                android:text="submit"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@id/lab_linearLayout"
+                app:layout_constraintTop_toBottomOf="@id/lab_linearLayout" />
+
+            <Button
+                android:id="@+id/cancelbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/submitbtn"
+                android:padding="5dp"
+                android:text="cancel"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintStart_toEndOf="@+id/submitbtn"
+                app:layout_constraintTop_toBottomOf="@id/lab_linearLayout"
+                android:layout_marginBottom="70dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+    </HorizontalScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

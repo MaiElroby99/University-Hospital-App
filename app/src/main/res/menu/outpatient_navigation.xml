@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/navigation_outpatientAppointment"
+        android:title="Appointments"
+        android:icon="@drawable/callender"/>
+
+    <item android:id="@+id/navigation_outpatientlab"
+        android:title="lab"
+        android:icon="@drawable/lab_scan"/>
+
+    <item android:id="@+id/navigation_outpatientreport"
+        android:title="Reports"
+        android:icon="@drawable/report"/>
+
+    <item android:id="@+id/navigation_outpatientdrugs"
+        android:title="Prescription"
+        android:icon="@drawable/drugs"/>
+</menu>
