@@ -11,8 +11,7 @@ class DoctorsDetails {
     var phone : String
     var degree : String
     var department : String
-    var option1ID : Int
-    var option2ID : Int
+
 
     constructor(
         imageID: Int,
@@ -25,8 +24,6 @@ class DoctorsDetails {
         phone: String,
         degree: String,
         department: String,
-        option1ID: Int,
-        option2ID: Int
     ) {
         this.imageID = imageID
         this.name = name
@@ -38,8 +35,7 @@ class DoctorsDetails {
         this.phone = phone
         this.degree = degree
         this.department = department
-        this.option1ID = option1ID
-        this.option2ID = option2ID
+
     }
 }
 

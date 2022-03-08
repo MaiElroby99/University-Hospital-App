@@ -32,7 +32,7 @@
         <entry key="..\:/Users/maial/AndroidStudioProjects/HMS/app/src/main/res/layout/fragment_doctor_user_inpatient.xml" value="0.1680071492403932" />
         <entry key="..\:/Users/maial/AndroidStudioProjects/HMS/app/src/main/res/layout/fragment_doctor_user_logout.xml" value="0.25" />
         <entry key="..\:/Users/maial/AndroidStudioProjects/HMS/app/src/main/res/layout/fragment_doctor_user_outpatient.xml" value="0.176" />
-        <entry key="..\:/Users/maial/AndroidStudioProjects/HMS/app/src/main/res/layout/fragment_doctors.xml" value="0.15758591785414922" />
+        <entry key="..\:/Users/maial/AndroidStudioProjects/HMS/app/src/main/res/layout/fragment_doctors.xml" value="0.15505464480874318" />
         <entry key="..\:/Users/maial/AndroidStudioProjects/HMS/app/src/main/res/layout/fragment_home.xml" value="0.2604166666666667" />
         <entry key="..\:/Users/maial/AndroidStudioProjects/HMS/app/src/main/res/layout/fragment_login.xml" value="0.264" />
         <entry key="..\:/Users/maial/AndroidStudioProjects/HMS/app/src/main/res/layout/fragment_logout.xml" value="0.20625" />
@@ -54,7 +54,7 @@
         <entry key="..\:/Users/maial/AndroidStudioProjects/HMS/app/src/main/res/layout/item_inpatient_layout.xml" value="0.18020833333333333" />
         <entry key="..\:/Users/maial/AndroidStudioProjects/HMS/app/src/main/res/layout/item_inpatient_vitalsigns_layout.xml" value="0.19010416666666666" />
         <entry key="..\:/Users/maial/AndroidStudioProjects/HMS/app/src/main/res/layout/item_outpatient_layout.xml" value="0.176" />
-        <entry key="..\:/Users/maial/AndroidStudioProjects/HMS/app/src/main/res/layout/item_row_layout.xml" value="0.41695501730103807" />
+        <entry key="..\:/Users/maial/AndroidStudioProjects/HMS/app/src/main/res/layout/item_row_layout.xml" value="0.264" />
         <entry key="..\:/Users/maial/AndroidStudioProjects/HMS/app/src/main/res/layout/nav_header_dashboard.xml" value="0.21557971014492755" />
         <entry key="..\:/Users/maial/AndroidStudioProjects/HMS/app/src/main/res/layout/nav_header_user_doctor.xml" value="0.25" />
         <entry key="..\:/Users/maial/AndroidStudioProjects/HMS/app/src/main/res/menu/activity_drawer.xml" value="0.264" />

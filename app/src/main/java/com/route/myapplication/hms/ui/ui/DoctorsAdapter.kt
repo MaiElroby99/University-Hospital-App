@@ -21,8 +21,8 @@ class DoctorsAdapter(var items :List<DoctorsDetails>) : RecyclerView.Adapter<Doc
         var Phone : TextView = itemView.findViewById(R.id.phone)
         var Degree : TextView = itemView.findViewById(R.id.degree)
         var Department : TextView = itemView.findViewById(R.id.department)
-        var Option1 : ImageView = itemView.findViewById(R.id.option1)
-        var Option2 : ImageView? = itemView.findViewById(R.id.option2)
+//        var Option1 : ImageView = itemView.findViewById(R.id.option1)
+//        var Option2 : ImageView? = itemView.findViewById(R.id.option2)
 
     }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DoctorsAdapter.ViewHolder {
@@ -47,12 +47,12 @@ class DoctorsAdapter(var items :List<DoctorsDetails>) : RecyclerView.Adapter<Doc
         holder.Phone.setText(item.phone.toString())
         holder.Degree.setText(item.degree.toString())
         holder.Department.setText(item.department.toString())
-        if(item.option1ID != null){
-            holder.Option1.setImageResource((item.option1ID!!))
-        }
-        if(item.option2ID != null){
-            holder.Option2?.setImageResource((item.option2ID!!))
-        }
+//        if(item.option1ID != null){
+//            holder.Option1.setImageResource((item.option1ID!!))
+//        }
+//        if(item.option2ID != null){
+//            holder.Option2?.setImageResource((item.option2ID!!))
+//        }
     }
 
 

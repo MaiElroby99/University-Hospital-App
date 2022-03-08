@@ -46,10 +46,10 @@ class DoctorsFragment : Fragment() {
 
     private fun AddingItems() : MutableList<DoctorsDetails>{
         val items: MutableList<DoctorsDetails> = arrayListOf()
-        items.add(DoctorsDetails(R.drawable.ic_doctor, "ahmed", "01111111111","a.bb@yahoo.com","male",23,"address","010999999","degree","dept",R.drawable.ic_delete,R.drawable.ic_edit))
-        items.add(DoctorsDetails(R.drawable.ic_doctor, "ahmed", "01111111111","a.bb@yahoo.com","male",23,"address","010999999","degree","dept",R.drawable.ic_delete,R.drawable.ic_edit))
-        for (i in 0..999) {
-            items.add(DoctorsDetails(R.drawable.ic_doctor, "ahmed", "01111111111","a.bb@yahoo.com","male",23,"address","010999999","degree","dept",R.drawable.ic_delete,R.drawable.ic_edit))
+//        items.add(DoctorsDetails(R.drawable.ic_doctor, "ahmed", "01111111111","a.bb@yahoo.com","male",23,"address","010999999","degree","dept",R.drawable.ic_delete,R.drawable.ic_edit))
+//        items.add(DoctorsDetails(R.drawable.ic_doctor, "ahmed", "01111111111","a.bb@yahoo.com","male",23,"address","010999999","degree","dept",R.drawable.ic_delete,R.drawable.ic_edit))
+         for (i in 0..50) {
+            items.add(DoctorsDetails(R.drawable.ic_doctor, "ahmed", "01111111111","a.bb@yahoo.com","male",23,"address","010999999","degree","dept"))
 
         }
         return items
