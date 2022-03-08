@@ -8,40 +8,60 @@
     android:background="@color/gray"
     tools:context=".ui.Menufragments.DoctorsFragment">
 
-    <Button
-        android:id="@+id/addDoctor_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Add Doctor"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:backgroundTint="@color/blue"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="80dp"
-        android:layout_marginStart="30dp"/>
-    <View
-        android:id="@+id/HLine"
-        android:layout_width="0dp"
-        android:layout_height="1dp"
-        android:background="@color/blue"
-        app:layout_constraintTop_toBottomOf="@id/addDoctor_btn"
-        app:layout_constraintStart_toStartOf="@id/addDoctor_btn"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="5dp"/>
+<!--    <HorizontalScrollView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="match_parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        android:layout_marginTop="70dp">-->
 
-    <HorizontalScrollView
-        android:id="@+id/horizontalscrollView_1st"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:scrollbars="horizontal"
-        app:layout_constraintStart_toStartOf="@+id/HLine"
-        app:layout_constraintTop_toTopOf="@id/HLine"
-        android:layout_marginTop="5dp">
+        <ScrollView
+            android:id="@+id/vertical_scroll"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="70dp">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+<!--            <HorizontalScrollView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content">-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontal_scroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <Button
+                            android:id="@+id/addDoctor_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Add Doctor"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:backgroundTint="@color/blue"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:layout_marginStart="20dp"/>
+                        <View
+                            android:id="@+id/HLine"
+                            android:layout_width="0dp"
+                            android:layout_height="2dp"
+                            android:background="@color/blue"
+                            app:layout_constraintTop_toBottomOf="@id/addDoctor_btn"
+                            app:layout_constraintStart_toStartOf="@id/addDoctor_btn"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_marginTop="5dp"/>
 
                         <TextView
                             android:id="@+id/nameTv"
@@ -51,9 +71,9 @@
                             android:layout_marginStart="30dp"
                             android:text="Name"
                             android:textColor="@color/black"
-                            android:textSize="16sp"
+                            android:textSize="20sp"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
+                            app:layout_constraintTop_toBottomOf="@id/HLine" />
 
                         <EditText
                             android:id="@+id/Nameinput"
@@ -61,7 +81,7 @@
                             android:layout_height="30dp"
                             android:padding="5dp"
                             app:layout_constraintStart_toEndOf="@id/nameTv"
-                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/HLine"
                             android:layout_marginTop="10dp"
                             android:layout_marginStart="5dp"
                             android:background="@drawable/text_input_name_design"/>
@@ -72,12 +92,11 @@
                             android:layout_height="wrap_content"
                             android:text="Email"
                             android:textColor="@color/black"
-                            android:textSize="16sp"
+                            android:textSize="20sp"
                             android:layout_marginTop="10dp"
-                            android:layout_marginStart="60dp"
+                            android:layout_marginStart="30dp"
                             app:layout_constraintStart_toEndOf="@id/Nameinput"
-                            app:layout_constraintTop_toTopOf="parent"
-                            />
+                            app:layout_constraintTop_toBottomOf="@id/HLine" />
 
                         <EditText
                             android:id="@+id/EmailInput"
@@ -86,7 +105,7 @@
                             android:hint=""
                             android:padding="5dp"
                             app:layout_constraintStart_toEndOf="@id/emailTv"
-                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/HLine"
                             android:layout_marginTop="10dp"
                             android:layout_marginStart="5dp"
                             android:background="@drawable/text_input_name_design"/>
@@ -97,24 +116,22 @@
                             android:layout_height="wrap_content"
                             android:text="gender"
                             android:textColor="@color/black"
-                            android:textSize="16sp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginStart="60dp"
-                            app:layout_constraintStart_toEndOf="@id/EmailInput"
-                            app:layout_constraintTop_toTopOf="parent"
-                            />
+                            android:textSize="20sp"
+                            android:layout_marginTop="30dp"
+                            app:layout_constraintStart_toStartOf="@id/nameTv"
+                            app:layout_constraintTop_toBottomOf="@id/nameTv" />
 
                         <Spinner
                             android:id="@+id/gender_input"
-                            android:layout_width="100dp"
+                            android:layout_width="145dp"
                             android:layout_height="wrap_content"
                             android:padding="5dp"
                             android:popupBackground="@color/white"
                             android:background="@drawable/text_input_name_design"
                             android:entries="@array/gender"
-                            android:layout_marginStart="10dp"
-                            android:layout_marginTop="10dp"
-                            app:layout_constraintTop_toTopOf="parent"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="30dp"
+                            app:layout_constraintTop_toBottomOf="@id/nameTv"
                             app:layout_constraintStart_toEndOf="@id/genderTv"/>
 
                         <Button
@@ -125,9 +142,9 @@
                             android:textAllCaps="false"
                             android:textColor="@color/white"
                             android:backgroundTint="@color/blue"
-                            android:layout_marginTop="5dp"
-                            android:layout_marginStart="60dp"
-                            app:layout_constraintTop_toTopOf="parent"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginStart="40dp"
+                            app:layout_constraintTop_toBottomOf="@id/emailTv"
                             app:layout_constraintStart_toEndOf="@id/gender_input"/>
 
                         <Button
@@ -139,172 +156,446 @@
                             android:textColor="@color/white"
                             android:backgroundTint="@color/blue"
                             app:layout_constraintStart_toEndOf="@id/searchDoctor_btn"
-                            app:layout_constraintTop_toTopOf="parent"
-                            android:layout_marginTop="5dp"
-                            android:layout_marginStart="60dp"
-                            android:layout_marginEnd="10dp"/>
+                            app:layout_constraintTop_toBottomOf="@id/emailTv"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginStart="10dp"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </HorizontalScrollView>
 
 
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </HorizontalScrollView>
-
-    <HorizontalScrollView
-        android:id="@+id/horizontalscrollView_2nd"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:scrollbars="horizontal"
-        android:layout_marginTop="5dp"
-        app:layout_constraintTop_toBottomOf="@id/horizontalscrollView_1st"
-        app:layout_constraintStart_toStartOf="@id/horizontalscrollView_2nd"
-        >
-        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="40dp"
-            android:paddingRight="5dp"
-            android:layout_marginTop="30dp"
-
-            app:layout_constraintTop_toBottomOf="@id/nameTv"
-            >
-
-            <TableRow>
-
-                <TextView
+                <LinearLayout
+                    android:id="@+id/layout_doctor_titles"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Image"
-                    android:layout_marginEnd="50dp"
-                    android:padding="5dp"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toBottomOf="@id/horizontal_scroll"
+                    app:layout_constraintStart_toStartOf="@id/horizontal_scroll"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Image"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="30dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="National Id"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="30dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email"
+                        android:layout_marginTop="30dp"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
 
-                <TextView
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gender"
+                        android:layout_marginTop="30dp"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Age"
+                        android:layout_marginTop="30dp"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Address"
+                        android:layout_marginTop="30dp"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Phone"
+                        android:layout_marginTop="30dp"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Degree"
+                        android:layout_marginTop="30dp"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Department"
+                        android:layout_marginTop="30dp"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Options"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="30dp"/>
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Name"
-                    android:padding="5dp"
-                    android:layout_marginEnd="50dp"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="National Id"
-                    android:padding="5dp"
-                    android:layout_marginEnd="50dp"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Email"
-                    android:layout_marginEnd="100dp"
-                    android:layout_marginStart="50dp"
-                    android:padding="5dp"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Gender"
-                    android:padding="5dp"
-                    android:layout_marginEnd="40dp"
-                    android:layout_marginStart="50dp"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text=" Age"
-                    android:padding="5dp"
-                    android:layout_marginEnd="50dp"
-                    android:layout_marginStart="50dp"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text=" Address"
-                    android:padding="5dp"
-                    android:layout_marginEnd="50dp"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text=" Phone"
-                    android:layout_marginEnd="100dp"
-                    android:padding="5dp"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text=" Degree"
-                    android:padding="5dp"
-                    android:layout_marginEnd="50dp"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text=" Department"
-                    android:padding="5dp"
-
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text=" Options"
-                    android:padding="5dp"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-            </TableRow>
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                tools:listitem="@layout/item_row_layout"/>
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:orientation="horizontal"
+                    tools:listitem="@layout/item_row_layout"
+                    app:layout_constraintStart_toEndOf="@id/layout_doctor_titles"
+                    app:layout_constraintTop_toTopOf="@id/layout_doctor_titles"/>
+<!--                <View-->
+<!--                    android:id="@+id/HorizontalLine"-->
+<!--                    android:layout_width="3dp"-->
+<!--                    android:layout_height="0dp"-->
+<!--                    android:background="@color/black"-->
+<!--                    android:layout_marginStart="5dp"-->
+<!--                    app:layout_constraintStart_toEndOf="@id/layoyt_doctor_titles"-->
+<!--                    app:layout_constraintTop_toTopOf="@id/layoyt_doctor_titles"-->
+<!--                    app:layout_constraintBottom_toBottomOf="@id/layoyt_doctor_titles"/>-->
 
 
-        </TableLayout>
-    </HorizontalScrollView>
+
+
+
+
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+<!--    </HorizontalScrollView>-->
+
+        </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Add Doctor"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:backgroundTint="@color/blue"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        android:layout_marginTop="80dp"-->
+<!--        android:layout_marginStart="30dp"/>-->
+
+<!--    <View-->
+<!--        android:id="@+id/HLine"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:background="@color/blue"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/addDoctor_btn"-->
+<!--        app:layout_constraintStart_toStartOf="@id/addDoctor_btn"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:layout_marginTop="5dp"/>-->
+
+<!--    <HorizontalScrollView-->
+<!--        android:id="@+id/horizontalscrollView_1st"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:scrollbars="horizontal"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/HLine"-->
+<!--        app:layout_constraintTop_toTopOf="@id/HLine"-->
+<!--        android:layout_marginTop="5dp">-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/nameTv"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:layout_marginStart="30dp"-->
+<!--                            android:text="Name"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textSize="16sp"-->
+<!--                            app:layout_constraintStart_toStartOf="parent"-->
+<!--                            app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--                        <EditText-->
+<!--                            android:id="@+id/Nameinput"-->
+<!--                            android:layout_width="150dp"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:padding="5dp"-->
+<!--                            app:layout_constraintStart_toEndOf="@id/nameTv"-->
+<!--                            app:layout_constraintTop_toTopOf="parent"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:layout_marginStart="5dp"-->
+<!--                            android:background="@drawable/text_input_name_design"/>-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/emailTv"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="Email"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textSize="16sp"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:layout_marginStart="60dp"-->
+<!--                            app:layout_constraintStart_toEndOf="@id/Nameinput"-->
+<!--                            app:layout_constraintTop_toTopOf="parent"-->
+<!--                            />-->
+
+<!--                        <EditText-->
+<!--                            android:id="@+id/EmailInput"-->
+<!--                            android:layout_width="150dp"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:hint=""-->
+<!--                            android:padding="5dp"-->
+<!--                            app:layout_constraintStart_toEndOf="@id/emailTv"-->
+<!--                            app:layout_constraintTop_toTopOf="parent"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:layout_marginStart="5dp"-->
+<!--                            android:background="@drawable/text_input_name_design"/>-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="gender"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textSize="16sp"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:layout_marginStart="60dp"-->
+<!--                            app:layout_constraintStart_toEndOf="@id/EmailInput"-->
+<!--                            app:layout_constraintTop_toTopOf="parent"-->
+<!--                            />-->
+
+<!--                        <Spinner-->
+<!--                            android:id="@+id/gender_input"-->
+<!--                            android:layout_width="100dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:padding="5dp"-->
+<!--                            android:popupBackground="@color/white"-->
+<!--                            android:background="@drawable/text_input_name_design"-->
+<!--                            android:entries="@array/gender"-->
+<!--                            android:layout_marginStart="10dp"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            app:layout_constraintTop_toTopOf="parent"-->
+<!--                            app:layout_constraintStart_toEndOf="@id/genderTv"/>-->
+
+<!--                        <Button-->
+<!--                            android:id="@+id/searchDoctor_btn"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="search"-->
+<!--                            android:textAllCaps="false"-->
+<!--                            android:textColor="@color/white"-->
+<!--                            android:backgroundTint="@color/blue"-->
+<!--                            android:layout_marginTop="5dp"-->
+<!--                            android:layout_marginStart="60dp"-->
+<!--                            app:layout_constraintTop_toTopOf="parent"-->
+<!--                            app:layout_constraintStart_toEndOf="@id/gender_input"/>-->
+
+<!--                        <Button-->
+<!--                            android:id="@+id/allhDoctor_btn"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="all"-->
+<!--                            android:textAllCaps="false"-->
+<!--                            android:textColor="@color/white"-->
+<!--                            android:backgroundTint="@color/blue"-->
+<!--                            app:layout_constraintStart_toEndOf="@id/searchDoctor_btn"-->
+<!--                            app:layout_constraintTop_toTopOf="parent"-->
+<!--                            android:layout_marginTop="5dp"-->
+<!--                            android:layout_marginStart="60dp"-->
+<!--                            android:layout_marginEnd="10dp"/>-->
+
+
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--    </HorizontalScrollView>-->
+
+<!--    <HorizontalScrollView-->
+<!--        android:id="@+id/horizontalscrollView_2nd"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:scrollbars="horizontal"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/horizontalscrollView_1st"-->
+<!--        app:layout_constraintStart_toStartOf="@id/horizontalscrollView_2nd"-->
+<!--        >-->
+<!--        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:paddingLeft="40dp"-->
+<!--            android:paddingRight="5dp"-->
+<!--            android:layout_marginTop="30dp"-->
+
+<!--            app:layout_constraintTop_toBottomOf="@id/nameTv"-->
+<!--            >-->
+
+<!--            <TableRow>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="Image"-->
+<!--                    android:layout_marginEnd="50dp"-->
+<!--                    android:padding="5dp"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="20sp"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="Name"-->
+<!--                    android:padding="5dp"-->
+<!--                    android:layout_marginEnd="50dp"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="20sp"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="National Id"-->
+<!--                    android:padding="5dp"-->
+<!--                    android:layout_marginEnd="50dp"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="20sp"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="Email"-->
+<!--                    android:layout_marginEnd="100dp"-->
+<!--                    android:layout_marginStart="50dp"-->
+<!--                    android:padding="5dp"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="20sp"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="Gender"-->
+<!--                    android:padding="5dp"-->
+<!--                    android:layout_marginEnd="40dp"-->
+<!--                    android:layout_marginStart="50dp"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="20sp"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text=" Age"-->
+<!--                    android:padding="5dp"-->
+<!--                    android:layout_marginEnd="50dp"-->
+<!--                    android:layout_marginStart="50dp"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="20sp"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text=" Address"-->
+<!--                    android:padding="5dp"-->
+<!--                    android:layout_marginEnd="50dp"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="20sp"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text=" Phone"-->
+<!--                    android:layout_marginEnd="100dp"-->
+<!--                    android:padding="5dp"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="20sp"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text=" Degree"-->
+<!--                    android:padding="5dp"-->
+<!--                    android:layout_marginEnd="50dp"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="20sp"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text=" Department"-->
+<!--                    android:padding="5dp"-->
+
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="20sp"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text=" Options"-->
+<!--                    android:padding="5dp"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="20sp"-->
+<!--                    android:textStyle="bold" />-->
+<!--            </TableRow>-->
+
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:id="@+id/recyclerView"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+<!--                tools:listitem="@layout/item_row_layout"/>-->
+
+
+<!--        </TableLayout>-->
+<!--    </HorizontalScrollView>-->
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
 
 
 
