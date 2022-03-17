@@ -10,10 +10,11 @@ class ApiManager {
     private var retrofit : Retrofit?=null;
 
     private fun getInstance():Retrofit{
-        val gson = GsonBuilder()
-            .setLenient()
-            .create()
+
         if (retrofit == null){
+            val gson = GsonBuilder()
+                .setLenient()
+                .create()
             retrofit = Retrofit.Builder()
                 .baseUrl("http://192.168.1.8:8090/")
                 .addConverterFactory(GsonConverterFactory.create(gson)).build();

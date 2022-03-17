@@ -77,8 +77,9 @@ class LoginFragment : Fragment() {
 
             override fun onResponse(call: Call<String>, response: Response<String>) {
                 if(response.isSuccessful){
-                    val intent_admin = Intent(context, DashboardActivity::class.java)
-                    startActivity(intent_admin)
+                    val intent_doctor = Intent(context, UserDoctorActivity::class.java)
+                    startActivity(intent_doctor)
+
                 }
             }
         } )
