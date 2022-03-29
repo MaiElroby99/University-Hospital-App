@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginStart="10dp">
+
+
+    <View
+        android:id="@+id/HorizontalLine_patient"
+        android:layout_width="3dp"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:layout_marginStart="5dp"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp">
+
+
+
+        <ImageView
+            android:id="@+id/Image_patient"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:id="@+id/name_patient"
+            android:text="Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"
+            />
+
+        <TextView
+            android:id="@+id/nationalID_patient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="National Id"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"/>
+
+
+        <TextView
+            android:id="@+id/email_patient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+
+        <TextView
+            android:id="@+id/gender_patient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+
+        <TextView
+            android:id="@+id/age_patient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:text=" Age" />
+
+
+        <TextView
+            android:id="@+id/address_patient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Address"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+
+        <TextView
+            android:id="@+id/phone_patient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Phone"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+
+        <TextView
+            android:id="@+id/blood_type_patient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Blood Type"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/option1Btn_patient"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+                app:icon="@drawable/ic_edit"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/green" />
+
+            <Button
+                android:id="@+id/option2Btn_patient"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+                app:icon="@drawable/ic_delete"
+                android:backgroundTint="@color/red"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -8,75 +8,48 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.route.myapplication.hms.R
 
-class PatientAdapter(var items :List<PatientDetails>) : RecyclerView.Adapter<PatientAdapter.ViewHolder>() {
+class PatientAdapter(var items :List<PatientDetails>) : RecyclerView.Adapter<PatientAdapter.ViewHolder>(){
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        var Name : TextView = itemView.findViewById(R.id.patient_name_tv)
-        var patientID : TextView = itemView.findViewById(R.id.patient_detailsID_tv)
-        var patientGender : TextView = itemView.findViewById(R.id.patient_detailsGender_tv)
-        var patientPhone : TextView = itemView.findViewById(R.id.patient_detailsPhone_tv)
-        var Appointment : ImageView = itemView.findViewById(R.id.makeAppointment)
-        var Lab : ImageView = itemView.findViewById(R.id.test)
-        var Report : ImageView = itemView.findViewById(R.id.report)
-        var prescription : ImageView = itemView.findViewById(R.id.medication)
-
+        var Image : ImageView = itemView.findViewById(R.id.Image_patient)
+        var Name : TextView = itemView.findViewById(R.id.name_patient)
+        var NationalID : TextView = itemView.findViewById(R.id.nationalID_patient)
+        var Email : TextView = itemView.findViewById(R.id.email_patient)
+        var Gender : TextView = itemView.findViewById(R.id.gender_patient)
+        var Age : TextView = itemView.findViewById(R.id.age_patient)
+        var Address : TextView = itemView.findViewById(R.id.address_patient)
+        var Phone : TextView = itemView.findViewById(R.id.phone_patient)
+        var BloodType : TextView = itemView.findViewById(R.id.blood_type_patient)
 
 
     }
-
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        var view = LayoutInflater.from(parent.context).inflate(R.layout.item_outpatient_layout,parent,false)
-        return PatientAdapter.ViewHolder(view)
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PatientAdapter.ViewHolder {
+        var view = LayoutInflater.from(parent.context).inflate(R.layout.item_row_layout_patients,parent,false)
+        return ViewHolder(view)
     }
 
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: PatientAdapter.ViewHolder, position: Int) {
         var item = items[position]
 
-        holder.Name.setText(item.Name.toString())
-        holder.patientID.setText(item.ID.toString())
-        holder.patientGender.setText(item.Gender.toString())
-        holder.patientPhone.setText(item.Phone.toString())
-
-        holder.Appointment.setImageResource((item.CalenderImageId!!))
-        holder.Lab.setImageResource((item.LabImageId!!))
-        holder.Report.setImageResource((item.ReportImageId!!))
-        holder.prescription.setImageResource((item.MedicienImageId!!))
-
-        onAppointmentImgClickListener.let {
-            holder.Appointment.setOnClickListener {
-                onAppointmentImgClickListener?.onImageClick(position,item)
-            }
+        if(item.imageID != null){
+            holder.Image.setImageResource((item.imageID!!))
         }
+        holder.Name.setText(item.name.toString())
+        holder.NationalID.setText(item.nationalID.toString())
+        holder.Email.setText(item.email.toString())
+        holder.Gender.setText(item.gender.toString())
+        if(item.age != null){
+            holder.Age.setText(item.age.toString()!!)        }
+        holder.Address.setText(item.address.toString())
 
-        onLabImgClickListener.let {
-            holder.Lab.setOnClickListener {
-                onLabImgClickListener?.onImageClick(position,item)
-            }
-        }
+        holder.Phone.setText(item.phone.toString())
+//        holder.Degree.setText(item.degree.toString())
+        holder.BloodType.setText(item.blood_type.toString())
 
-        onReportImgClickListener.let {
-            holder.Report.setOnClickListener {
-                onReportImgClickListener?.onImageClick(position,item)
-            }
-        }
-
-        onPrescriptionImgClickListener.let {
-            holder.prescription.setOnClickListener {
-                onPrescriptionImgClickListener?.onImageClick(position,item)
-            }
-        }
     }
+
 
     override fun getItemCount(): Int {
         return items.size
-    }
-
-    var onAppointmentImgClickListener : OnImageClickListener?=null
-    var onLabImgClickListener : OnImageClickListener?=null
-    var onReportImgClickListener : OnImageClickListener?=null
-    var onPrescriptionImgClickListener : OnImageClickListener?=null
-
-    interface OnImageClickListener{
-        fun onImageClick(pos:Int,item:PatientDetails)
     }
 
 }

@@ -7,16 +7,14 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.route.myapplication.hms.R
-import com.route.myapplication.hms.ui.ui.DoctorInpatientAdapter
-import com.route.myapplication.hms.ui.ui.InpatientDetails
-import com.route.myapplication.hms.ui.ui.PatientAdapter
-import com.route.myapplication.hms.ui.ui.PatientDetails
+import com.route.myapplication.hms.ui.ui.OutPatientAdapter
+import com.route.myapplication.hms.ui.ui.OutPatientDetails
 
 
 class DoctorUserOutpatientFragment : Fragment() {
     lateinit var recyclerView: RecyclerView
-    lateinit var adapter : PatientAdapter
-    lateinit var items: MutableList<PatientDetails>
+    lateinit var adapter : OutPatientAdapter
+    lateinit var items: MutableList<OutPatientDetails>
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -31,39 +29,39 @@ class DoctorUserOutpatientFragment : Fragment() {
 
         recyclerView =requireView().findViewById(R.id.Doctoroutpatient_recyclerView)
         items = AddingItems()
-        adapter = PatientAdapter(items)
+        adapter = OutPatientAdapter(items)
         recyclerView.adapter = adapter
 
-        adapter.onAppointmentImgClickListener = object : PatientAdapter.OnImageClickListener{
-            override fun onImageClick(pos: Int, item: PatientDetails) {
+        adapter.onAppointmentImgClickListener = object : OutPatientAdapter.OnImageClickListener{
+            override fun onImageClick(pos: Int, item: OutPatientDetails) {
                 pushFragment(MakeAppointmentFragment())
             }
         }
 
-        adapter.onLabImgClickListener = object : PatientAdapter.OnImageClickListener{
-            override fun onImageClick(pos: Int, item: PatientDetails) {
+        adapter.onLabImgClickListener = object : OutPatientAdapter.OnImageClickListener{
+            override fun onImageClick(pos: Int, item: OutPatientDetails) {
                 pushFragment(MakeLab_ScanFragment())
             }
         }
 
-        adapter.onReportImgClickListener = object : PatientAdapter.OnImageClickListener{
-            override fun onImageClick(pos: Int, item: PatientDetails) {
+        adapter.onReportImgClickListener = object : OutPatientAdapter.OnImageClickListener{
+            override fun onImageClick(pos: Int, item: OutPatientDetails) {
                 pushFragment(PatientReportFragment())
             }
         }
 
-        adapter.onPrescriptionImgClickListener = object : PatientAdapter.OnImageClickListener{
-            override fun onImageClick(pos: Int, item: PatientDetails) {
+        adapter.onPrescriptionImgClickListener = object : OutPatientAdapter.OnImageClickListener{
+            override fun onImageClick(pos: Int, item: OutPatientDetails) {
                 pushFragment(PrescriptionFragment())
             }
         }
     }
 
-    private fun AddingItems() : MutableList<PatientDetails>{
-        val items: MutableList<PatientDetails> = arrayListOf()
+    private fun AddingItems() : MutableList<OutPatientDetails>{
+        val items: MutableList<OutPatientDetails> = arrayListOf()
         for (i in 0..999) {
             items.add(
-                PatientDetails("Ahmed Ali ",
+                OutPatientDetails("Ahmed Ali ",
                 "ID: 001122334455",
                 "Gender: Male",
                 "Phone: 01091983199",

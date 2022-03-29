@@ -36,7 +36,7 @@ class DashboardActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
 
-        drawerLayout =findViewById(R.id.drawerLayout)
+        drawerLayout =findViewById(R.id.drawerLayout_dashboard)
         drawerIcon = findViewById(R.id.drawer_icon)
         homeIcon = findViewById(R.id.home_icon)
 

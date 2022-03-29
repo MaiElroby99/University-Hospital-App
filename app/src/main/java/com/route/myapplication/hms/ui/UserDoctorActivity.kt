@@ -2,23 +2,15 @@ package com.route.myapplication.hms.ui
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.Menu
 import android.widget.ImageView
 import androidx.appcompat.app.ActionBarDrawerToggle
-import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.navigateUp
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.google.android.material.appbar.AppBarLayout
 import com.route.myapplication.hms.R
 import com.route.myapplication.hms.ui.DoctorUserFragments.*
-import com.route.myapplication.hms.ui.Menufragments.*
 
 class UserDoctorActivity : AppCompatActivity() {
 
@@ -31,12 +23,13 @@ class UserDoctorActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_user_doctor)
 
-        drawerLayout =findViewById(R.id.drawerLayout)
+        drawerLayout =findViewById(R.id.drawerLayout_doctor)
         drawerIcon = findViewById(R.id.drawer_icon)
         homeIcon = findViewById(R.id.home_icon)
 
         drawerIcon.setOnClickListener {
             drawerLayout.open()
+
         }
 
         homeIcon.setOnClickListener {
@@ -52,25 +45,25 @@ class UserDoctorActivity : AppCompatActivity() {
         navView.setNavigationItemSelectedListener {
                 menuItem->
             menuItem.isChecked=true
-            if(menuItem.itemId == R.id.nav_Doctordashboard)
+            if(menuItem.itemId == R.id.nav_dashboard_doctor)
             {
                 pushFragment(DoctorUserDashboardFragment(),menuItem.title.toString())
 
-            } else if(menuItem.itemId == R.id.nav_DoctorAppointment)
+            } else if(menuItem.itemId == R.id.nav_appointment_doctor)
             {
                 pushFragment(DoctorUserAppointmentsFragment(),menuItem.title.toString())
 
-            } else if(menuItem.itemId == R.id.nav_Outpatient)
+            } else if(menuItem.itemId == R.id.nav_outpatient_doctor)
             {
                 pushFragment(DoctorUserOutpatientFragment(),menuItem.title.toString())
 
             }
-            else if(menuItem.itemId == R.id.nav_Inpatient)
+            else if(menuItem.itemId == R.id.nav_inpatient_doctor)
             {
                 pushFragment(DoctorUserInpatientFragment(),menuItem.title.toString())
 
             }
-            else if(menuItem.itemId == R.id.nav_Doctorlogout)
+            else if(menuItem.itemId == R.id.nav_logout_doctor)
             {
                 pushFragment(DoctorUserLogoutFragment(),menuItem.title.toString())
 
@@ -78,6 +71,11 @@ class UserDoctorActivity : AppCompatActivity() {
 
             return@setNavigationItemSelectedListener true
         }
+        navView.setCheckedItem(R.id.nav_dashboard_doctor)
+        pushFragment(DoctorUserDashboardFragment(),"dashboard")
+
+
+
 
     }
 

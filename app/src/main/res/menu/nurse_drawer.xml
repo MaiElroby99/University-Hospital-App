@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_add_vital_sign_nurse"
+            android:title="Add Vital Sign"
+            android:icon="@drawable/ic_vitalsigns"/>
+
+        <item
+            android:id="@+id/nav_show_vital_sign_nurse"
+            android:title="Show Vital Sign"
+            android:icon="@drawable/ic_vitalsigns"/>
+
+        <item
+            android:id="@+id/nav_show_medicines_nurse"
+            android:title="Show Medicine"
+            android:icon="@drawable/ic_vitalsigns"/>
+
+
+        <item
+            android:id="@+id/nav_logout_nurse"
+            android:title="logout"
+            android:icon="@drawable/ic_logout"
+            android:iconTint="@color/red"/>
+    </group>
+</menu>

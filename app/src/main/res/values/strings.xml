@@ -41,6 +41,24 @@
         <item>option5</item>
     </string-array>
 
+    <string-array name="bloodTypeOptions">
+        <item>Select blood type:</item>
+        <item>option1</item>
+        <item>option2</item>
+        <item>option3</item>
+        <item>option4</item>
+        <item>option5</item>
+    </string-array>
+
+    <string-array name="departmentOptions">
+        <item>Select department:</item>
+        <item>option1</item>
+        <item>option2</item>
+        <item>option3</item>
+        <item>option4</item>
+        <item>option5</item>
+    </string-array>
+
     <string-array name="genderOptions">
         <item>Select gender:</item>
         <item>Male</item>
@@ -95,6 +113,9 @@
     </string-array>
 
     <string name="title_activity_user_doctor">UserDoctorActivity</string>
+    <string name="title">Title</string>
+    <string name="message">Message</string>
+    <string name="schedule_notification">Schedule Notification</string>
 
     <!--    <string-array name="gender">-->
     <!--        <item>Male</item>-->

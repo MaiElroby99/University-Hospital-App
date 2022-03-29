@@ -12,6 +12,7 @@ import com.route.myapplication.hms.R
 import com.route.myapplication.hms.ui.DashboardActivity
 import com.route.myapplication.hms.ui.Menufragments.AddDoctorFragment
 import com.route.myapplication.hms.ui.UserDoctorActivity
+import com.route.myapplication.hms.ui.UserNurseActivity
 
 
 class LoginFragment : Fragment() {
@@ -45,6 +46,9 @@ class LoginFragment : Fragment() {
             } else if (id_input.text.toString() == "doctor" && pass_input.text.toString() == "123") {
                 val intent_doctor = Intent(context, UserDoctorActivity::class.java)
                 startActivity(intent_doctor)
+            } else if (id_input.text.toString() == "nurse" && pass_input.text.toString() == "123") {
+                val intent_nurse = Intent(context, UserNurseActivity::class.java)
+                startActivity(intent_nurse)
             }
         }
 
