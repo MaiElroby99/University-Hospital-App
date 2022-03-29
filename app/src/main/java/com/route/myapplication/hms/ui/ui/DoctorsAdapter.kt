@@ -1,6 +1,5 @@
 package com.route.myapplication.hms.ui.ui
 
-import android.media.Image
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,22 +10,22 @@ import com.route.myapplication.hms.R
 
 class DoctorsAdapter(var items :List<DoctorsDetails>) : RecyclerView.Adapter<DoctorsAdapter.ViewHolder>(){
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        var Image : ImageView = itemView.findViewById(R.id.Image)
-        var Name : TextView = itemView.findViewById(R.id.name)
-        var NationalID : TextView = itemView.findViewById(R.id.nationalID)
-        var Email : TextView = itemView.findViewById(R.id.email)
-        var Gender : TextView = itemView.findViewById(R.id.gender)
-        var Age : TextView = itemView.findViewById(R.id.age)
-        var Address : TextView = itemView.findViewById(R.id.address)
-        var Phone : TextView = itemView.findViewById(R.id.phone)
-        var Degree : TextView = itemView.findViewById(R.id.degree)
-        var Department : TextView = itemView.findViewById(R.id.department)
+        var Image : ImageView = itemView.findViewById(R.id.Image_doctors)
+        var Name : TextView = itemView.findViewById(R.id.name_doctors)
+        var NationalID : TextView = itemView.findViewById(R.id.nationalID_doctors)
+        var Email : TextView = itemView.findViewById(R.id.email_doctors)
+        var Gender : TextView = itemView.findViewById(R.id.gender_doctors)
+        var Age : TextView = itemView.findViewById(R.id.age_doctors)
+        var Address : TextView = itemView.findViewById(R.id.address_doctors)
+        var Phone : TextView = itemView.findViewById(R.id.phone_doctors)
+        var Degree : TextView = itemView.findViewById(R.id.degree_doctors)
+        var Department : TextView = itemView.findViewById(R.id.department_doctors)
 //        var Option1 : ImageView = itemView.findViewById(R.id.option1)
 //        var Option2 : ImageView? = itemView.findViewById(R.id.option2)
 
     }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DoctorsAdapter.ViewHolder {
-        var view = LayoutInflater.from(parent.context).inflate(R.layout.item_row_layout,parent,false)
+        var view = LayoutInflater.from(parent.context).inflate(R.layout.item_row_layout_doctors,parent,false)
         return ViewHolder(view)
     }
 

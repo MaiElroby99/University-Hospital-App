@@ -19,6 +19,7 @@ import com.route.myapplication.hms.ui.api.Model.LoginRequest
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import com.route.myapplication.hms.ui.UserNurseActivity
 
 
 class LoginFragment : Fragment() {
@@ -51,17 +52,6 @@ class LoginFragment : Fragment() {
                 }else{
                 Toast.makeText(requireContext(),"Username / Password Required",Toast.LENGTH_LONG).show()
                 }
-
-
-
-//            if (id_input.text.toString() == "admin" && pass_input.text.toString() == "123") {
-//                val intent_admin = Intent(context, DashboardActivity::class.java)
-//                startActivity(intent_admin)
-//
-//            } else if (id_input.text.toString() == "doctor" && pass_input.text.toString() == "123") {
-//                val intent_doctor = Intent(context, UserDoctorActivity::class.java)
-//                startActivity(intent_doctor)
-//            }
         }
 
     }

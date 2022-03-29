@@ -3,28 +3,29 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_Doctordashboard"
+            android:id="@+id/nav_dashboard_doctor"
             android:title="dashboard"
             android:icon="@drawable/ic_dashboard"/>
         <item
-            android:id="@+id/nav_DoctorAppointment"
+            android:id="@+id/nav_appointment_doctor"
             android:title="appointments"
             android:icon="@drawable/ic_doctor"/>
 
         <item
-            android:id="@+id/nav_Outpatient"
+            android:id="@+id/nav_outpatient_doctor"
             android:title="Out patient"
             android:icon="@drawable/ic_doctor"/>
 
         <item
-            android:id="@+id/nav_Inpatient"
+            android:id="@+id/nav_inpatient_doctor"
             android:title="In patient"
             android:icon="@drawable/ic_doctor"/>
 
 
         <item
-            android:id="@+id/nav_Doctorlogout"
+            android:id="@+id/nav_logout_doctor"
             android:title="logout"
-            android:icon="@drawable/ic_logout"/>
+            android:icon="@drawable/ic_logout"
+            android:iconTint="@color/red"/>
     </group>
 </menu>

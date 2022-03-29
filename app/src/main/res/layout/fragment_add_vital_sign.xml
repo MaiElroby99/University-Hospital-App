@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Menufragments.AddDoctorFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/addVitalSignTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD VITAL SIGN"
+            android:textColor="@color/blue"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginTop="65dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/regPatientId_vital_sign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:text="Patient ID:"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@id/addVitalSignTv" />
+            <EditText
+                android:id="@+id/patient_id_input_vital_sign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/inputtext_reg_design"
+                android:hint="enter patient id"
+                android:padding="5dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/regPatientId_vital_sign" />
+
+            <TextView
+            android:id="@+id/regPatientName_vital_sign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="10dp"
+            android:text="Patient name:"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@id/patient_id_input_vital_sign"
+                />
+
+            <EditText
+            android:id="@+id/name_input_vital_sign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/inputtext_reg_design"
+            android:hint="enter patient name"
+            android:padding="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/regPatientName_vital_sign" />
+
+
+
+
+        <TextView
+            android:id="@+id/weight_vital_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Weight:"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/name_input_vital_sign" />
+
+        <EditText
+            android:id="@+id/weight_input_vital_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/inputtext_reg_design"
+            android:hint="                              "
+            android:padding="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/weight_vital_sign" />
+
+        <TextView
+            android:id="@+id/blood_pressure_vital_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Blood Pressure:"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@id/blood_pressure_input_vital_sign"
+            app:layout_constraintTop_toBottomOf="@id/name_input_vital_sign" />
+
+        <EditText
+            android:id="@+id/blood_pressure_input_vital_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/inputtext_reg_design"
+            android:hint="                               "
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/weight_input_vital_sign"
+            app:layout_constraintTop_toBottomOf="@id/blood_pressure_vital_sign" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/degree"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:text="Degree:"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="18sp"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/nationalId_input" />-->
+
+<!--        <Spinner-->
+<!--            android:id="@+id/degree_input"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:background="@drawable/inputtext_reg_design"-->
+<!--            android:entries="@array/degreeOptions"-->
+<!--            android:padding="5dp"-->
+<!--            android:popupBackground="@color/white"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/degree" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/department_vital_sign"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:text="Department:"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="18sp"-->
+<!--            app:layout_constraintStart_toStartOf="@id/department_input_vital_sign"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/blood_pressure_input_vital_sign" />-->
+
+<!--        <Spinner-->
+<!--            android:id="@+id/department_input_vital_sign"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:background="@drawable/inputtext_reg_design"-->
+<!--            android:entries="@array/departmentOptions"-->
+<!--            android:padding="5dp"-->
+<!--            android:popupBackground="@color/white"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.678"-->
+<!--            app:layout_constraintStart_toEndOf="@id/pulse_rate_input_vital_sign"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/department_vital_sign" />-->
+
+            <TextView
+                android:id="@+id/temperature_vital_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Temperature:"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@id/temperature_input_vital_sign"
+                app:layout_constraintTop_toBottomOf="@id/blood_pressure_input_vital_sign" />
+
+            <EditText
+                android:id="@+id/temperature_input_vital_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/inputtext_reg_design"
+                android:hint="                               "
+                android:padding="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/pulse_rate_input_vital_sign"
+                app:layout_constraintTop_toBottomOf="@id/temperature_vital_sign" />
+        <TextView
+            android:id="@+id/pulse_rate_vital_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:text="pulse rate:"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/blood_pressure_input_vital_sign" />
+
+        <EditText
+            android:id="@+id/pulse_rate_input_vital_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/inputtext_reg_design"
+            android:hint="                              "
+            android:padding="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pulse_rate_vital_sign" />
+
+        <TextView
+            android:id="@+id/gender_vital_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Gender:"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@id/gender_input_vital_sign"
+            app:layout_constraintTop_toBottomOf="@id/temperature_input_vital_sign" />
+
+        <Spinner
+            android:id="@+id/gender_input_vital_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/inputtext_reg_design"
+            android:entries="@array/genderOptions"
+            android:padding="5dp"
+            android:popupBackground="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/respiratory_rate_input_vital_sign"
+            app:layout_constraintTop_toBottomOf="@id/gender_vital_sign" />
+
+        <TextView
+            android:id="@+id/respiratory_rate_vital_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Respiratory Rate:"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pulse_rate_input_vital_sign" />
+
+        <EditText
+            android:id="@+id/respiratory_rate_input_vital_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/inputtext_reg_design"
+            android:hint="                              "
+            android:padding="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/respiratory_rate_vital_sign" />
+
+        <TextView
+            android:id="@+id/signature_vital_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:text="Signature:"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/respiratory_rate_input_vital_sign" />
+
+        <EditText
+            android:id="@+id/signature_input_vital_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/inputtext_reg_design"
+            android:hint="                              "
+            android:padding="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/signature_vital_sign" />
+
+            <TextView
+                android:id="@+id/nurse_name_vital_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Nurse Name:"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@id/nurse_name_input_vital_sign"
+                app:layout_constraintTop_toBottomOf="@id/gender_input_vital_sign" />
+
+            <EditText
+                android:id="@+id/nurse_name_input_vital_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/inputtext_reg_design"
+                android:hint="                               "
+                android:padding="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/signature_input_vital_sign"
+                app:layout_constraintTop_toBottomOf="@id/nurse_name_vital_sign" />
+        <TextView
+            android:id="@+id/comment_vital_sign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Comment:"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/signature_input_vital_sign" />
+
+        <EditText
+            android:id="@+id/address_input_vital_sign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/inputtext_reg_design"
+            android:hint="enter your comment here"
+            android:padding="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/comment_vital_sign" />
+
+        <Button
+            android:id="@+id/submitbtn_vital_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/submitbtn"
+            android:backgroundTint="@color/blue"
+            android:padding="5dp"
+            android:text="submit"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toStartOf="@+id/cancelbtn_vital_sign"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/address_input_vital_sign" />
+
+        <Button
+            android:id="@+id/cancelbtn_vital_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/submitbtn"
+            android:padding="5dp"
+            android:text="cancel"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/submitbtn_vital_sign"
+            app:layout_constraintTop_toBottomOf="@id/address_input_vital_sign" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

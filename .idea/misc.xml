@@ -3,6 +3,64 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/drawable/inputtext_reg_design.xml" value="0.1655" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/activity_dashboard.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/activity_home.xml" value="0.11302083333333333" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/activity_user_doctor.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/activity_user_nurse.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/add_new_prescription.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/app_bar_dashboard.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/app_bar_user_doctor.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/app_bar_user_nurse.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/fragment_add_doctor.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/fragment_add_nurse.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/fragment_add_patient.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/fragment_add_staff.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/fragment_add_stuff.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/fragment_add_vital_sign.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/fragment_appointment.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/fragment_clinc.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/fragment_doctor.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/fragment_doctor_user_appointments.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/fragment_doctor_user_dashboard.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/fragment_doctor_user_inpatient.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/fragment_doctor_user_logout.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/fragment_doctor_user_outpatient.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/fragment_doctors.xml" value="0.264" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/fragment_login.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/fragment_logout.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/fragment_make_appointment.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/fragment_make_lab__scan.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/fragment_nurse_user_add_vital_sign.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/fragment_nurse_user_logout.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/fragment_nurse_user_notification.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/fragment_nurse_user_show_medicine.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/fragment_nurse_user_show_vital_sign.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/fragment_nurses.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/fragment_patient_report.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/fragment_patients.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/fragment_schedule_notification.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/fragment_staff_members.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/fragment_vital_signs.xml" value="0.185546875" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/fragment_vital_signs_nurse.xml" value="0.185546875" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/item_appointment_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/item_inpatient_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/item_inpatient_vitalsigns_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/item_nurse_inpatient_vitalsigns_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/item_outpatient_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/item_row_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/item_row_layout_doctors.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/item_row_layout_nurses.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/item_row_layout_patients.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/item_row_layout_staff_members.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/nav_header_dashboard.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/nav_header_user_doctor.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/nav_header_user_nurse.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/layout/notification.xml" value="0.264" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/menu/activity_drawer.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/menu/doctor_drawer.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/University-Hospital-App/app/src/main/res/menu/nurse_drawer.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/maial/AndroidStudioProjects/HMS/app/src/main/res/drawable-anydpi/ic_vitalSigns.xml" value="0.1365" />
         <entry key="..\:/Users/maial/AndroidStudioProjects/HMS/app/src/main/res/drawable/green_rounded_btn_design.xml" value="0.1365" />
         <entry key="..\:/Users/maial/AndroidStudioProjects/HMS/app/src/main/res/drawable/inputtext_reg_design.xml" value="0.1295" />

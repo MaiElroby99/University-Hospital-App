@@ -30,7 +30,7 @@ class DoctorsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        recyclerView =requireView().findViewById(R.id.recyclerView)
+        recyclerView =requireView().findViewById(R.id.recyclerView_doctors)
         items_row = AddingItems()
         adapter = DoctorsAdapter(items_row)
         recyclerView.adapter = adapter
@@ -49,7 +49,7 @@ class DoctorsFragment : Fragment() {
 //        items.add(DoctorsDetails(R.drawable.ic_doctor, "ahmed", "01111111111","a.bb@yahoo.com","male",23,"address","010999999","degree","dept",R.drawable.ic_delete,R.drawable.ic_edit))
 //        items.add(DoctorsDetails(R.drawable.ic_doctor, "ahmed", "01111111111","a.bb@yahoo.com","male",23,"address","010999999","degree","dept",R.drawable.ic_delete,R.drawable.ic_edit))
          for (i in 0..50) {
-            items.add(DoctorsDetails(R.drawable.ic_doctor, "ahmed", "01111111111","a.bb@yahoo.com","male",23,"address","010999999","degree","dept"))
+            items.add(DoctorsDetails(R.drawable.ic_doctor, "Ahmed", "01111111111","a.bb@yahoo.com","male",23,"address","010999999","degree","dept"))
 
         }
         return items
